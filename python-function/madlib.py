@@ -1,7 +1,9 @@
-name = ('dasom', 'rob')
+def madlib(name, subject):
+    return f"{name}'s favorite subject is {subject}."
 
-sub = ('math', 'art')
 
-
-def my_fav_sub(name):
-    print(f'{name}\'s favorite subject is {sub}')
+while True:
+    name = input('what is your name?')
+    subject = input('what is your favorite subject?')
+    text = madlib(name, subject)
+    print(text)
